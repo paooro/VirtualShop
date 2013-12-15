@@ -89,4 +89,10 @@ class ProductsController < ApplicationController
       format.html { redirect_to @product, notice: 'Producto adquirido' }
     end
   end
+
+  def search
+    @key = params[:key]
+    regexp_keywords = Regexp.new(".*"+@key+".*",Regexp::IGNORECASE)
+    @products = Product.any_of({name: regexp_keywords}, {description: regexp_keywords})
+  end
 end
