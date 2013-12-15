@@ -2,7 +2,9 @@ VirtualShop::Application.routes.draw do
   root :to => 'products#index'
   get 'products/:id/buy', to: 'products#buy'
 
-  resources :products
+  resources :products do
+    get 'search', on: :collection
+  end
 
 
   # The priority is based upon order of creation:
