@@ -17,6 +17,20 @@
               %input.form-control{placeholder: "Producto...", type: "search"}
             %button.btn.btn-success{type: "submit"}
               %span.glyphicon.glyphicon-search
+
+    .navbar.navbar-inverse.navbar-fixed-top{role: "navigation"}
+      .container
+        .navbar-header
+          %a.navbar-brand{href: "/"} Tienda Virtual
+        .navbar-collapse.collapse
+          %form.navbar-form.navbar-right{role: 'form', :action => search_products_path, :method => 'get' }
+            .form-group
+              %input.form-control{name: 'key', placeholder: "Producto...", type: "search"}
+            %button.btn.btn-success{type: "submit"}
+              %span.glyphicon.glyphicon-search
+      - if admin_signed_in?
+        .navbar-header.navbar-right
+          =link_to  "cerrar sesion admin", destroy_admin_session_path, method: :delete, class: 'navbar-link'
     .container
       .main
         = yield

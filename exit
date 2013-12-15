@@ -1,0 +1,23 @@
+commit d766650e93bb64db711e4badd3acbf35bf89952f
+Author: STCAV <stcav@stcav-Vostro-430.(none)>
+Date:   Sun Dec 15 11:59:03 2013 -0500
+
+    add file application.html.haml
+
+commit 7d2e8e473000477b5cfbec561dbd66b9a6842aae
+Author: STCAV <stcav@stcav-Vostro-430.(none)>
+Date:   Sun Dec 15 11:42:01 2013 -0500
+
+    add .idea folder to gitignore file
+
+commit 00861f52dfe876acbfcff528008ff747a999a8a2
+Author: STCAV <stcav@stcav-Vostro-430.(none)>
+Date:   Sun Dec 15 11:41:46 2013 -0500
+
+    add js environment to gemfile file
+
+commit 28728fe7be4ace6710036936cd77858f9f20e0ff
+Author: STCAV <stcav@stcav-Vostro-430.(none)>
+Date:   Sun Dec 15 11:34:57 2013 -0500
+
+    initial commit

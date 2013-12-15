@@ -15,6 +15,7 @@ gem 'awesome_print'
 gem 'quiet_assets'
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'devise'
 group :development, :test do
   gem 'jazz_hands' #
 end
