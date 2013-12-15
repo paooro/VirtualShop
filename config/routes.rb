@@ -1,5 +1,6 @@
 VirtualShop::Application.routes.draw do
   root :to => 'products#index'
+  get 'products/:id/buy', to: 'products#buy'
 
   resources :products
 
